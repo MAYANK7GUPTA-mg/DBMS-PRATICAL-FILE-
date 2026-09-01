@@ -8,6 +8,10 @@ Design an **Entity-Relationship (ER) Diagram** for an **Indian E-Commerce Platfo
 
 The objective of this experiment is to represent the structure of an e-commerce database using an ER diagram and identify the entities, attributes, relationships, keys, and constraints involved in the system.
 
+## ER Diagram
+
+![Indian E-Commerce ER Diagram](ER_Diagram.png)
+
 ## Entities
 
 The ER diagram consists of the following entities:
