@@ -10,7 +10,7 @@ The objective of this experiment is to represent the structure of an e-commerce 
 
 ## ER Diagram
 
-![Indian E-Commerce ER Diagram](ER_Diagram.png)
+![Indian E-Commerce ER Diagram](er_diagram.png)
 
 ## Entities
 
