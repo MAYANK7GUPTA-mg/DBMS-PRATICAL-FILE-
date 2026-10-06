@@ -113,7 +113,6 @@ This query displays employees whose salary is greater than 70,000.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
 
 ![Selection Output](images/selection.png)
 
@@ -138,7 +137,6 @@ This query displays only the employee name and job title.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
 
 ![Projection Output](images/projection.png)
 
@@ -160,7 +158,6 @@ This query displays the names and salaries of employees whose salary is greater 
 
 ### Output
 
-Paste the ByteXL output screenshot here.
 
 ![Selection and Projection Output](images/selection_projection.png)
 
@@ -185,7 +182,6 @@ The total number of employees is 30.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
 
 ![COUNT Output](images/count.png)
 
@@ -206,7 +202,6 @@ This query calculates the average salary of all employees.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
 
 ![AVG Output](images/avg.png)
 
@@ -227,7 +222,6 @@ This query finds the highest salary among all employees.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
 
 ![MAX Output](images/max.png)
 
@@ -248,7 +242,6 @@ This query finds the lowest salary among all employees.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
 
 ![MIN Output](images/min.png)
 
@@ -269,7 +262,6 @@ This query calculates the total salary paid to all employees.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
 
 ![SUM Output](images/sum.png)
 
@@ -291,7 +283,6 @@ This query groups employees according to their department and counts the employe
 
 ### Output
 
-Paste the ByteXL output screenshot here.
 
 ![GROUP BY Output](images/group_by.png)
 
@@ -317,8 +308,6 @@ This query displays each department along with its number of employees.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
-
 ![Department-wise GROUP BY Output](images/group_by_department.png)
 
 **Output Screenshot – Department-wise GROUP BY**
@@ -343,8 +332,6 @@ This query calculates the average salary for each department.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
-
 ![Department Average Salary](images/group_by_avg.png)
 
 **Output Screenshot – Department Average Salary**
@@ -368,8 +355,6 @@ The HAVING clause filters groups after GROUP BY.
 This query displays departments having more than 5 employees.
 
 ### Output
-
-Paste the ByteXL output screenshot here.
 
 ![HAVING Output](images/having.png)
 
@@ -396,8 +381,6 @@ This query displays departments whose average salary is greater than 65,000.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
-
 ![HAVING with AVG Output](images/having_avg.png)
 
 **Output Screenshot – HAVING with AVG**
@@ -423,8 +406,6 @@ FROM employee;
 The CASE expression classifies employees into High, Medium, and Low salary categories.
 
 ### Output
-
-Paste the ByteXL output screenshot here.
 
 ![CASE Salary Output](images/case_salary.png)
 
@@ -454,8 +435,6 @@ This query uses CASE to display the department name based on the department ID.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
-
 ![Department CASE Output](images/case_department.png)
 
 **Output Screenshot – Department CASE**
@@ -476,8 +455,6 @@ This query displays employees in ascending order of salary.
 
 ### Output
 
-Paste the ByteXL output screenshot here.
-
 ![ORDER BY ASC Output](images/order_by_asc.png)
 
 **Output Screenshot – ORDER BY ASC**
@@ -497,8 +474,6 @@ ORDER BY salary DESC;
 This query displays employees in descending order of salary.
 
 ### Output
-
-Paste the ByteXL output screenshot here.
 
 ![ORDER BY DESC Output](images/order_by_desc.png)
 
@@ -530,8 +505,6 @@ This query:
 
 ### Output
 
-Paste the ByteXL output screenshot here.
-
 ![GROUP BY HAVING ORDER BY](images/group_having_order.png)
 
 **Output Screenshot – GROUP BY + HAVING + ORDER BY**
@@ -556,8 +529,6 @@ ORDER BY employee_count DESC;
 This query displays the number of employees working on each project.
 
 ### Output
-
-Paste the ByteXL output screenshot here.
 
 ![Project-wise Employee Count](images/project_employee_count.png)
 
@@ -588,8 +559,6 @@ ORDER BY e.emp_name ASC;
 This query combines the Employee, Department, and Project tables to display complete employee project information.
 
 ### Output
-
-Paste the ByteXL output screenshot here.
 
 ![Employee Department Project](images/employee_department_project.png)
 
@@ -643,8 +612,6 @@ FROM project;
 ```
 
 ### Output
-
-Paste the ByteXL verification output screenshot here.
 
 ![Verification Output](images/verification.png)
 
