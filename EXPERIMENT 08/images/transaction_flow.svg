@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="800" viewBox="0 0 1360 800" role="img" aria-labelledby="title desc">
+  <title id="title">Generated MySQL Workbench-style transaction output</title>
+  <desc id="desc">Illustrative Workbench interface showing account balances before and after a committed bank transfer, SQL statements, result grids, and successful action output.</desc>
+  <defs>
+    <linearGradient id="top" x2="0" y2="1">
+      <stop stop-color="#fff" offset="0"/>
+      <stop stop-color="#e9edf2" offset="1"/>
+    </linearGradient>
+    <linearGradient id="row" x2="0" y2="1">
+      <stop stop-color="#fff" offset="0"/>
+      <stop stop-color="#f0f5fb" offset="1"/>
+    </linearGradient>
+    <style>
+      .ui { font: 14px "Segoe UI", Arial, sans-serif; fill: #20252b; }
+      .small { font: 12px "Segoe UI", Arial, sans-serif; fill: #31363b; }
+      .sql { font: 15px Consolas, "Courier New", monospace; fill: #17212b; }
+      .kw { fill: #0758b5; font-weight: 700; }
+      .str { fill: #b55b00; }
+      .muted { fill: #65717e; }
+      .panel { fill: #fff; stroke: #bdc5ce; }
+      .gridhead { fill: #edf0f3; stroke: #c2c8ce; }
+      .gridcell { fill: url(#row); stroke: #d7dce1; }
+      .green { fill: #218739; }
+    </style>
+  </defs>
+  <rect width="1360" height="800" fill="#e9edf1"/>
+  <rect width="1360" height="34" fill="url(#top)"/>
+  <text class="ui" x="16" y="23" font-weight="700">MySQL Workbench</text>
+  <text class="small muted" x="1155" y="22">exp08_demo — Local instance MySQL80</text>
+  <rect y="34" width="1360" height="32" fill="#f7f8fa" stroke="#c7cdd3"/>
+  <text class="ui" x="14" y="55">File　 Edit　 View　 Query　 Database　 Server　 Tools　 Scripting　 Help</text>
+  <rect y="66" width="1360" height="37" fill="#f3f5f7" stroke="#c7cdd3"/>
+  <text class="ui" x="18" y="91">＋　▣　▤　⚡　⚡　◉　◧　◉　▥　Limit to 50000 rows</text>
+  <rect x="0" y="103" width="205" height="580" fill="#f7f8f9" stroke="#c2c9d0"/>
+  <text class="ui" x="14" y="130" font-weight="700">SCHEMAS</text>
+  <text class="small" x="24" y="160">⌄ exp08_demo</text>
+  <text class="small" x="43" y="184">⌄ Tables</text>
+  <text class="small" x="64" y="209">▤ Bank_Account</text>
+  <text class="small" x="64" y="233">▤ Bank_Transaction</text>
+  <text class="small muted" x="24" y="270">› Views</text>
+  <text class="small muted" x="24" y="295">› Stored Procedures</text>
+  <text class="small muted" x="24" y="320">› Functions</text>
+  <line x1="205" y1="103" x2="205" y2="683" stroke="#b7c0c9"/>
+
+  <rect class="panel" x="220" y="112" width="550" height="542"/>
+  <rect x="220" y="112" width="550" height="31" fill="#dcecf8" stroke="#aab9c5"/>
+  <text class="ui" x="238" y="133" font-weight="700">Query 1 — Account balances before transfer</text>
+  <rect x="221" y="144" width="548" height="259" fill="#fff"/>
+  <g class="sql">
+    <text x="237" y="173"><tspan class="muted">1</tspan>  <tspan class="kw">USE</tspan> exp08_demo;</text>
+    <text x="237" y="204"><tspan class="muted">2</tspan>  <tspan class="kw">SELECT</tspan> AccountID, AccountName, Balance</text>
+    <text x="237" y="229"><tspan class="muted">3</tspan>  <tspan class="kw">FROM</tspan> Bank_Account</text>
+    <text x="237" y="254"><tspan class="muted">4</tspan>  <tspan class="kw">WHERE</tspan> AccountID <tspan class="kw">IN</tspan> (1001, 1002)</text>
+    <text x="237" y="279"><tspan class="muted">5</tspan>  <tspan class="kw">ORDER BY</tspan> AccountID;</text>
+    <text x="237" y="329" class="muted">-- Starting balances before transaction</text>
+  </g>
+  <rect x="221" y="405" width="548" height="30" fill="#f2f4f6" stroke="#c7cdd3"/>
+  <text class="small" x="234" y="425" font-weight="700">Result Grid　　Filter Rows: __________　　Export: ▣</text>
+  <rect class="gridhead" x="235" y="442" width="140" height="27"/>
+  <rect class="gridhead" x="375" y="442" width="180" height="27"/>
+  <rect class="gridhead" x="555" y="442" width="135" height="27"/>
+  <text class="small" x="245" y="461" font-weight="700">AccountID</text>
+  <text class="small" x="385" y="461" font-weight="700">AccountName</text>
+  <text class="small" x="565" y="461" font-weight="700">Balance</text>
+  <rect class="gridcell" x="235" y="469" width="140" height="30"/>
+  <rect class="gridcell" x="375" y="469" width="180" height="30"/>
+  <rect class="gridcell" x="555" y="469" width="135" height="30"/>
+  <rect class="gridcell" x="235" y="499" width="140" height="30"/>
+  <rect class="gridcell" x="375" y="499" width="180" height="30"/>
+  <rect class="gridcell" x="555" y="499" width="135" height="30"/>
+  <text class="small" x="251" y="489">1001</text><text class="small" x="385" y="489">Asha</text><text class="small" x="565" y="489">1000.00</text>
+  <text class="small" x="251" y="519">1002</text><text class="small" x="385" y="519">Ravi</text><text class="small" x="565" y="519">500.00</text>
+  <text class="small muted" x="235" y="556">2 row(s) returned</text>
+
+  <rect class="panel" x="790" y="112" width="550" height="542"/>
+  <rect x="790" y="112" width="550" height="31" fill="#dcecf8" stroke="#aab9c5"/>
+  <text class="ui" x="808" y="133" font-weight="700">Query 2 — Atomic transfer with COMMIT</text>
+  <rect x="791" y="144" width="548" height="259" fill="#fff"/>
+  <g class="sql">
+    <text x="807" y="173"><tspan class="muted">1</tspan>  <tspan class="kw">USE</tspan> exp08_demo;</text>
+    <text x="807" y="204"><tspan class="muted">2</tspan>  <tspan class="kw">BEGIN</tspan>;</text>
+    <text x="807" y="235"><tspan class="muted">3</tspan>  <tspan class="kw">UPDATE</tspan> Bank_Account</text>
+    <text x="807" y="260"><tspan class="muted">4</tspan>  <tspan class="kw">SET</tspan> Balance = Balance - 100.00</text>
+    <text x="807" y="285"><tspan class="muted">5</tspan>  <tspan class="kw">WHERE</tspan> AccountID = 1001;</text>
+    <text x="807" y="316"><tspan class="muted">6</tspan>  <tspan class="kw">UPDATE</tspan> Bank_Account</text>
+    <text x="807" y="341"><tspan class="muted">7</tspan>  <tspan class="kw">SET</tspan> Balance = Balance + 100.00</text>
+    <text x="807" y="366"><tspan class="muted">8</tspan>  <tspan class="kw">WHERE</tspan> AccountID = 1002;</text>
+    <text x="807" y="397"><tspan class="muted">9</tspan>  <tspan class="kw">COMMIT</tspan>;</text>
+  </g>
+  <rect x="791" y="405" width="548" height="30" fill="#f2f4f6" stroke="#c7cdd3"/>
+  <text class="small" x="804" y="425" font-weight="700">Result Grid　　Filter Rows: __________　　Export: ▣</text>
+  <rect class="gridhead" x="805" y="442" width="140" height="27"/>
+  <rect class="gridhead" x="945" y="442" width="180" height="27"/>
+  <rect class="gridhead" x="1125" y="442" width="135" height="27"/>
+  <text class="small" x="815" y="461" font-weight="700">AccountID</text>
+  <text class="small" x="955" y="461" font-weight="700">AccountName</text>
+  <text class="small" x="1135" y="461" font-weight="700">Balance</text>
+  <rect class="gridcell" x="805" y="469" width="140" height="30"/>
+  <rect class="gridcell" x="945" y="469" width="180" height="30"/>
+  <rect class="gridcell" x="1125" y="469" width="135" height="30"/>
+  <rect class="gridcell" x="805" y="499" width="140" height="30"/>
+  <rect class="gridcell" x="945" y="499" width="180" height="30"/>
+  <rect class="gridcell" x="1125" y="499" width="135" height="30"/>
+  <text class="small" x="821" y="489">1001</text><text class="small" x="955" y="489">Asha</text><text class="small" x="1135" y="489">900.00</text>
+  <text class="small" x="821" y="519">1002</text><text class="small" x="955" y="519">Ravi</text><text class="small" x="1135" y="519">600.00</text>
+  <text class="small muted" x="805" y="556">2 row(s) returned — balances committed</text>
+
+  <rect x="0" y="684" width="1360" height="116" fill="#f8f9fa" stroke="#c4cbd2"/>
+  <text class="ui" x="222" y="710" font-weight="700">Output — Action Output</text>
+  <rect class="gridhead" x="222" y="721" width="35" height="25"/><rect class="gridhead" x="257" y="721" width="82" height="25"/><rect class="gridhead" x="339" y="721" width="490" height="25"/><rect class="gridhead" x="829" y="721" width="470" height="25"/>
+  <text class="small" x="233" y="739" font-weight="700">#</text><text class="small" x="267" y="739" font-weight="700">Time</text><text class="small" x="349" y="739" font-weight="700">Action</text><text class="small" x="839" y="739" font-weight="700">Message</text>
+  <rect x="222" y="746" width="1077" height="25" fill="#edf5fb" stroke="#d7dce1"/>
+  <circle cx="236" cy="758" r="6" class="green"/>
+  <text class="small" x="267" y="763">19:27:31</text><text class="small" x="349" y="763">COMMIT; SELECT AccountID, AccountName, Balance ...</text><text class="small" x="839" y="763">Query OK — 2 row(s) returned</text>
+</svg>
