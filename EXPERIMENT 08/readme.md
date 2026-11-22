@@ -14,7 +14,7 @@ To demonstrate banking-style transactions with `BEGIN`, `COMMIT`, `ROLLBACK`, an
 
 This experiment uses MySQL 8.0 and InnoDB tables.
 
-- [`../exp08.sql`](../exp08.sql) creates the sample accounts and transaction ledger, then runs the commit, savepoint, and rollback examples.
+- [`exp08.sql`](exp08.sql) creates the sample accounts and transaction ledger, then runs the commit, savepoint, and rollback examples.
 - [`session_a.sql`](session_a.sql) contains the commands for the first concurrent session.
 - [`session_b.sql`](session_b.sql) contains the commands for the second concurrent session.
 
@@ -137,7 +137,7 @@ The two-session scripts demonstrate all four levels, show an application-level l
 ## 7. How to Run
 
 1. In a MySQL 8.0 client, select the schema for this practical.
-2. Run [`../exp08.sql`](../exp08.sql) once to create the tables and run the transaction examples.
+2. Run [`exp08.sql`](exp08.sql) once to create the tables and run the transaction examples.
 3. Open two connections to that same schema.
 4. Follow the step order in section 5, using the labeled commands in `session_a.sql` and `session_b.sql`.
 5. Complete or roll back each transaction before starting another scenario. For repeat runs, use the setup script again only after both sessions have no active transaction.
