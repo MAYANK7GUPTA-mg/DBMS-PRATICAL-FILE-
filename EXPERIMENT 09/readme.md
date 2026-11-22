@@ -6,7 +6,7 @@
 
 ## 1. Aim
 
-To create a railway booking table with 5,000 sample records, inspect query execution plans using `EXPLAIN`, and compare table scans with single-column and composite indexes.
+Create a Railway Booking table with at least 5,000 records. Benchmark query performance before and after creating single and composite indexes. Use `EXPLAIN` to compare execution plans.
 
 ---
 
@@ -63,6 +63,8 @@ WHERE train_no = 12005
 ```
 
 `EXPLAIN` is run for both queries before and after creating indexes. The sample screenshot shows that before indexing both queries use a full table scan (`type = ALL`, estimated `rows = 5000`). After adding the `train_no` index, Query 1 uses `idx_train_no` (`type = ref`, estimated `rows = 250`); the multi-condition query can still use that index but must filter additional rows.
+
+`EXPLAIN` reports the optimizer's plan and estimated row counts; it does not report elapsed query execution time. This experiment's supplied output compares plans and index access. Actual elapsed times depend on the database server, cache state, and client.
 
 ---
 
